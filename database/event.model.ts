@@ -29,7 +29,7 @@ function slugify(text: string): string {
   return text
     .toLowerCase()
     .trim()
-    .replace(/[^\w\s-]/g, "") // Remove non-word characters except whitespace and hyphen
+    .replace(/[^\p{L}\p{N}\s-]/gu, "") // Remove non-alphanumeric characters preserving Unicode letters and digits
     .replace(/[\s_-]+/g, "-") // Replace spaces and underscores with a single hyphen
     .replace(/^-+|-+$/g, ""); // Trim leading/trailing hyphens
 }
@@ -129,6 +129,11 @@ EventSchema.pre<IEvent>("save", function (this: IEvent) {
   // Regenerate slug only if the title field has changed
   if (this.isModified("title")) {
     this.slug = slugify(this.title);
+  }
+
+  // Ensure slug is not empty before saving
+  if (!this.slug) {
+    throw new Error("Failed to generate a valid slug from the event title.");
   }
 
   // Validate and normalize date to ISO format (YYYY-MM-DD)
