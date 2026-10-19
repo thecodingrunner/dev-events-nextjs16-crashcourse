@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="734e37d6-4dd5-4c61-8ed8-b2f62cf1c554" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(dashboard)/dashboard/analytics/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(dashboard)/dashboard/users/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(dashboard)/dashboard/users/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(dashboard)/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(root)/about/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(root)/error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(root)/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/books/route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/db.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/global-error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/EventCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ExploreBtn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LightRays.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/hello.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/audience.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/mode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/pin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/event-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/event1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/event2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/event3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/event4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/event5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/event6.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="51" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000002719792642" />
+      <entry key="MS500" value="1.0486303235347136" />
+      <entry key="S2" value="1.4696767006924838" />
+      <entry key="S5" value="1.7678639106724683" />
+      <entry key="S10" value="2.2556450678042594" />
+      <entry key="S30" value="6.77880783109214" />
+      <entry key="S60" value="13.229326321144907" />
+      <entry key="M2" value="23.834939229317776" />
+      <entry key="M5" value="55.806653538542236" />
+      <entry key="M10" value="100.49836667122615" />
+      <entry key="M15" value="134.0945911293718" />
+      <entry key="M30" value="201.9384109028112" />
+      <entry key="H1" value="294.07334041099097" />
+      <entry key="H2" value="410.16579813776315" />
+      <entry key="H4" value="517.1525797012163" />
+      <entry key="D1" value="654.1523343968053" />
+      <entry key="W1" value="683.8405350035132" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="3.530804730015066E-306" />
+      <entry key="MS500" value="8.12034984135852E-62" />
+      <entry key="S2" value="5.338185791276159E-16" />
+      <entry key="S5" value="7.779603696384287E-7" />
+      <entry key="S10" value="8.820241629972544E-4" />
+      <entry key="S30" value="0.09840571249313981" />
+      <entry key="S60" value="0.39338288979226715" />
+      <entry key="M2" value="1.0609335123996904" />
+      <entry key="M5" value="2.4903382902266675" />
+      <entry key="M10" value="4.026976324207128" />
+      <entry key="M15" value="5.2217748661403975" />
+      <entry key="M30" value="7.882222054726214" />
+      <entry key="H1" value="11.932839527250259" />
+      <entry key="H2" value="17.382223581300092" />
+      <entry key="H4" value="22.551906938215627" />
+      <entry key="D1" value="29.27687879756024" />
+      <entry key="W1" value="30.744618398600764" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="9.498583470868696E-4" />
+      <entry key="MS500" value="0.24997206459909593" />
+      <entry key="S2" value="0.8980308131571573" />
+      <entry key="S5" value="1.412365509257321" />
+      <entry key="S10" value="2.0253917261305614" />
+      <entry key="S30" value="6.71101671331508" />
+      <entry key="S60" value="13.47745795307874" />
+      <entry key="M2" value="24.768554027069282" />
+      <entry key="M5" value="58.18880519210667" />
+      <entry key="M10" value="104.4318803074372" />
+      <entry key="M15" value="139.23332889364997" />
+      <entry key="M30" value="209.75792192532842" />
+      <entry key="H1" value="305.9615184376651" />
+      <entry key="H2" value="427.51799843675525" />
+      <entry key="H4" value="539.686080279088" />
+      <entry key="D1" value="683.4254378736352" />
+      <entry key="W1" value="714.5845923971932" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3KuLVFtyd9KSMwHuuxVg349eGMT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Finn/jsmastery-courses/nextjs-demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Users\\Finn\\jsmastery-courses\\nextjs-demo\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Finn\jsmastery-courses\nextjs-demo" />
+      <recent name="C:\Users\Finn\jsmastery-courses\nextjs-demo\app" />
+      <recent name="C:\Users\Finn\jsmastery-courses\nextjs-demo\app\(root)" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Finn\jsmastery-courses\nextjs-demo\app" />
+      <recent name="C:\Users\Finn\jsmastery-courses\nextjs-demo\app\api\books" />
+      <recent name="C:\Users\Finn\jsmastery-courses\nextjs-demo\app\(dashboard)" />
+      <recent name="C:\Users\Finn\jsmastery-courses\nextjs-demo\app\(dashboard)\dashboard\users" />
+      <recent name="C:\Users\Finn\jsmastery-courses\nextjs-demo\app\(dashboard)\dashboard" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.341" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="734e37d6-4dd5-4c61-8ed8-b2f62cf1c554" name="Changes" comment="" />
+      <created>1792402528199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792402528199</updated>
+      <workItem from="1792402529224" duration="11945000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/components/LightRays.jsx" />
+      </list>
+    </option>
+  </component>
+</project>
