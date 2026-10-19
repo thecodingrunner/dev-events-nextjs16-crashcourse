@@ -34,6 +34,87 @@ function slugify(text: string): string {
     .replace(/^-+|-+$/g, ""); // Trim leading/trailing hyphens
 }
 
+/**
+ * Helper function to validate and normalize a date string to ISO format (YYYY-MM-DD).
+ * Verifies that the input's calendar components match the parsed date to reject impossible dates (e.g. February 30).
+ */
+function normalizeAndValidateDate(dateInput: string): string {
+  const trimmed = dateInput.trim();
+  if (!trimmed) {
+    throw new Error("Date must not be empty.");
+  }
+
+  // Check ISO format YYYY-MM-DD (optionally with time component)
+  const isoMatch = trimmed.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (isoMatch) {
+    const year = parseInt(isoMatch[1], 10);
+    const month = parseInt(isoMatch[2], 10);
+    const day = parseInt(isoMatch[3], 10);
+    const date = new Date(Date.UTC(year, month - 1, day));
+    if (
+      date.getUTCFullYear() !== year ||
+      date.getUTCMonth() + 1 !== month ||
+      date.getUTCDate() !== day
+    ) {
+      throw new Error(`Invalid calendar date: ${dateInput}. Please provide a valid calendar date.`);
+    }
+    return date.toISOString().split("T")[0];
+  }
+
+  // Check MM/DD/YYYY or M/D/YYYY format
+  const slashMatch = trimmed.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+  if (slashMatch) {
+    const month = parseInt(slashMatch[1], 10);
+    const day = parseInt(slashMatch[2], 10);
+    const year = parseInt(slashMatch[3], 10);
+    const date = new Date(Date.UTC(year, month - 1, day));
+    if (
+      date.getUTCFullYear() !== year ||
+      date.getUTCMonth() + 1 !== month ||
+      date.getUTCDate() !== day
+    ) {
+      throw new Error(`Invalid calendar date: ${dateInput}. Please provide a valid calendar date.`);
+    }
+    return date.toISOString().split("T")[0];
+  }
+
+  // Check month names (e.g. 'October 22, 2026' or '22 October 2026')
+  const monthNames: Record<string, number> = {
+    jan: 1, january: 1, feb: 2, february: 2, mar: 3, march: 3,
+    apr: 4, april: 4, may: 5, jun: 6, june: 6, jul: 7, july: 7,
+    aug: 8, august: 8, sep: 9, september: 9, oct: 10, october: 10,
+    nov: 11, november: 11, dec: 12, december: 12,
+  };
+  const monthMatch = trimmed.match(
+    /\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b/i
+  );
+  const yearMatch = trimmed.match(/\b(\d{4})\b/);
+  const dayMatch = trimmed.replace(/\b\d{4}\b/, "").match(/\b(\d{1,2})(?:st|nd|rd|th)?\b/);
+
+  if (monthMatch && yearMatch && dayMatch) {
+    const month = monthNames[monthMatch[1].toLowerCase()];
+    const year = parseInt(yearMatch[1], 10);
+    const day = parseInt(dayMatch[1], 10);
+    const date = new Date(Date.UTC(year, month - 1, day));
+    if (
+      date.getUTCFullYear() !== year ||
+      date.getUTCMonth() + 1 !== month ||
+      date.getUTCDate() !== day
+    ) {
+      throw new Error(`Invalid calendar date: ${dateInput}. Please provide a valid calendar date.`);
+    }
+    return date.toISOString().split("T")[0];
+  }
+
+  // Fallback to standard Date parsing
+  const parsedDate = new Date(trimmed);
+  if (isNaN(parsedDate.getTime())) {
+    throw new Error(`Invalid date format: ${dateInput}. Must be a valid date string.`);
+  }
+
+  return parsedDate.toISOString().split("T")[0];
+}
+
 const EventSchema = new Schema<IEvent>(
   {
     title: {
@@ -138,12 +219,7 @@ EventSchema.pre<IEvent>("save", function (this: IEvent) {
 
   // Validate and normalize date to ISO format (YYYY-MM-DD)
   if (this.isModified("date")) {
-    const parsedDate = new Date(this.date);
-    if (isNaN(parsedDate.getTime())) {
-      throw new Error(`Invalid date format: ${this.date}. Must be a valid date string.`);
-    }
-    // Store in normalized ISO date format YYYY-MM-DD
-    this.date = parsedDate.toISOString().split("T")[0];
+    this.date = normalizeAndValidateDate(this.date);
   }
 
   // Normalize time string by trimming extra whitespace
