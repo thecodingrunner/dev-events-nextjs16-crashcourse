@@ -5,37 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="734e37d6-4dd5-4c61-8ed8-b2f62cf1c554" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(dashboard)/dashboard/analytics/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(dashboard)/dashboard/users/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(dashboard)/dashboard/users/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(dashboard)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/error.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/books/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/db.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/global-error.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/EventCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ExploreBtn.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/LightRays.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/hello.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/arrow-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/audience.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/mode.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/pin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/event-full.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/event1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/event2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/event3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/event4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/event5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/event6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/books/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/books/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/global-error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/global-error.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/EventCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/EventCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ExploreBtn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ExploreBtn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,61 +32,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000002719792642" />
-      <entry key="MS500" value="1.0486303235347136" />
-      <entry key="S2" value="1.4696767006924838" />
-      <entry key="S5" value="1.7678639106724683" />
-      <entry key="S10" value="2.2556450678042594" />
-      <entry key="S30" value="6.77880783109214" />
-      <entry key="S60" value="13.229326321144907" />
-      <entry key="M2" value="23.834939229317776" />
-      <entry key="M5" value="55.806653538542236" />
-      <entry key="M10" value="100.49836667122615" />
-      <entry key="M15" value="134.0945911293718" />
-      <entry key="M30" value="201.9384109028112" />
-      <entry key="H1" value="294.07334041099097" />
-      <entry key="H2" value="410.16579813776315" />
-      <entry key="H4" value="517.1525797012163" />
-      <entry key="D1" value="654.1523343968053" />
-      <entry key="W1" value="683.8405350035132" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000091473438" />
+      <entry key="S2" value="1.0097796598332343" />
+      <entry key="S5" value="1.1570831130902053" />
+      <entry key="S10" value="1.396337120505013" />
+      <entry key="S30" value="1.7345503843193737" />
+      <entry key="S60" value="1.8573863378257855" />
+      <entry key="M2" value="1.9800386312763028" />
+      <entry key="M5" value="3.160450122720468" />
+      <entry key="M10" value="7.144313906865623" />
+      <entry key="M15" value="16.089606183029073" />
+      <entry key="M30" value="64.13757390609264" />
+      <entry key="H1" value="169.78081806074198" />
+      <entry key="H2" value="322.85374039268044" />
+      <entry key="H4" value="476.8353553486585" />
+      <entry key="D1" value="690.099591232283" />
+      <entry key="W1" value="738.5108094745189" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.530804730015066E-306" />
-      <entry key="MS500" value="8.12034984135852E-62" />
-      <entry key="S2" value="5.338185791276159E-16" />
-      <entry key="S5" value="7.779603696384287E-7" />
-      <entry key="S10" value="8.820241629972544E-4" />
-      <entry key="S30" value="0.09840571249313981" />
-      <entry key="S60" value="0.39338288979226715" />
-      <entry key="M2" value="1.0609335123996904" />
-      <entry key="M5" value="2.4903382902266675" />
-      <entry key="M10" value="4.026976324207128" />
-      <entry key="M15" value="5.2217748661403975" />
-      <entry key="M30" value="7.882222054726214" />
-      <entry key="H1" value="11.932839527250259" />
-      <entry key="H2" value="17.382223581300092" />
-      <entry key="H4" value="22.551906938215627" />
-      <entry key="D1" value="29.27687879756024" />
-      <entry key="W1" value="30.744618398600764" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="2.41423737324496E-248" />
+      <entry key="S10" value="1.5537878821425718E-124" />
+      <entry key="S30" value="5.5164208667022444E-42" />
+      <entry key="S60" value="2.9453303159233917E-21" />
+      <entry key="M2" value="9.180100560779359E-11" />
+      <entry key="M5" value="2.3502932558360875E-4" />
+      <entry key="M10" value="0.039121088531944716" />
+      <entry key="M15" value="0.23774207357297764" />
+      <entry key="M30" value="1.6818707467948637" />
+      <entry key="H1" value="5.5120833487810845" />
+      <entry key="H2" value="11.813846390362992" />
+      <entry key="H4" value="18.59200658998248" />
+      <entry key="D1" value="28.349709114527666" />
+      <entry key="W1" value="30.603599621927" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.498583470868696E-4" />
-      <entry key="MS500" value="0.24997206459909593" />
-      <entry key="S2" value="0.8980308131571573" />
-      <entry key="S5" value="1.412365509257321" />
-      <entry key="S10" value="2.0253917261305614" />
-      <entry key="S30" value="6.71101671331508" />
-      <entry key="S60" value="13.47745795307874" />
-      <entry key="M2" value="24.768554027069282" />
-      <entry key="M5" value="58.18880519210667" />
-      <entry key="M10" value="104.4318803074372" />
-      <entry key="M15" value="139.23332889364997" />
-      <entry key="M30" value="209.75792192532842" />
-      <entry key="H1" value="305.9615184376651" />
-      <entry key="H2" value="427.51799843675525" />
-      <entry key="H4" value="539.686080279088" />
-      <entry key="D1" value="683.4254378736352" />
-      <entry key="W1" value="714.5845923971932" />
+      <entry key="MS100" value="0.9138314502294005" />
+      <entry key="MS500" value="0.9821396041359663" />
+      <entry key="S2" value="1.005210054872058" />
+      <entry key="S5" value="1.1548042036399273" />
+      <entry key="S10" value="1.3948325117099343" />
+      <entry key="S30" value="1.7338767827414718" />
+      <entry key="S60" value="1.8570183333979637" />
+      <entry key="M2" value="1.9798428771606988" />
+      <entry key="M5" value="3.160569002880117" />
+      <entry key="M10" value="7.182435765116109" />
+      <entry key="M15" value="16.32346914762999" />
+      <entry key="M30" value="65.80595426740183" />
+      <entry key="H1" value="175.2721795105177" />
+      <entry key="H2" value="334.64712076516264" />
+      <entry key="H4" value="495.4121524860572" />
+      <entry key="D1" value="718.4456379742546" />
+      <entry key="W1" value="769.113849699735" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -130,7 +107,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "implement-posthog",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/Finn/jsmastery-courses/nextjs-demo",
@@ -174,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1792402528199</updated>
-      <workItem from="1792402529224" duration="11945000" />
+      <workItem from="1792402529224" duration="15368000" />
     </task>
     <servers />
   </component>

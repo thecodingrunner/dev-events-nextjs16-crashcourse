@@ -1,18 +1,25 @@
 'use client' // Error boundaries must be Client Components
 
+import posthog from "posthog-js"
+import { useEffect } from "react"
+
 export default function GlobalError({
                                         error,
-                                        retry,
+                                        reset,
                                     }: {
-    error: unknown
-    retry: () => void
+    error: Error & { digest?: string }
+    reset: () => void
 }) {
+    useEffect(() => {
+        posthog.captureException(error)
+    }, [error])
+
     return (
         // global-error must include html and body tags
         <html>
         <body>
         <h2>Something went wrong!</h2>
-        <button onClick={() => retry()}>Try again</button>
+        <button onClick={() => reset()}>Try again</button>
         </body>
         </html>
     )
